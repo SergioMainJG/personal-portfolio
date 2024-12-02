@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/common.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../assets/main.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <meta
+      name="description"
+      content="A simple html website with multiple sections"
+    />
+    <meta name="keywords" content="html website simple css" />
+    <link rel="shortcut icon" href="../assets/icons/ico.svg" type="image/svg" />
+  </head>
+  <body>
+    <header>
+      <aside>
+        <img src="../assets/images/yo.webp" alt="sergio arce" />
+        <h3 class="section-title">Sergio Arce</h3>
+      </aside>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/articles/">Articles</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <main class="nav-title">
+        <h1>Full Stack Developer</h1>
+        <h3>The Penguin >>> Arcane</h3>
+      </main>
+    </header>
+    <main>
+      <h1 class="main-title">Contact</h1>
+      <div class="form-container">
+        <form action="" method="post">
+          <label for="email">Email:</label>
+          <input placeholder="Email" type="email" name="email" id="email">
+          <label for="name">Name:</label>
+          <input placeholder="Name" type="text" name="name" id="name">
+          <label for="isProblem">Is about a problem?:</label>
+          <input type="checkbox" name="isProblem" id="isProblem">
+          <br />
+          <label for="isBusiness">Is about a business?:</label>
+          <input type="checkbox" name="isBusiness" id="isBusiness">
+          <label for="description">Description:</label>
+          <textarea placeholder="Description here" name="description" id="description" rows="15"></textarea>
+          <button type="submit">Send!</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

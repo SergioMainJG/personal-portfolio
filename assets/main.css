@@ -1,0 +1,69 @@
+
+.main-content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 2px black solid;
+}
+.section-title{
+    text-align: center;
+}
+.projects{
+    border: 2px black solid;
+    display: inline;
+    width: 25%;
+    justify-content: center;
+}
+.project{
+    padding: 0rem 0rem 0rem 0.5rem;
+    font-size: 0.8rem;
+}
+.experiences{
+    width: 35%;
+    border: 2px black solid;
+}
+.experience{
+    padding: 0rem 1rem 1.5rem 1rem;
+}
+.experiencie-title{
+    font-size: 1rem;
+}
+.education{
+    width: 40%;
+    border: 2px black solid;
+    padding: 1rem;
+}
+.education-list{
+    list-style: none;
+}
+footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.reviews-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+.review{
+    border: 1px solid #000000c0;
+    border-radius: 15px;
+    width: 20%;
+    height: 30%;
+}
+.comment, .author, .authors-job{
+    font-size: 0.8rem;
+    margin: 1rem;
+    color: black;
+}
+.copyright{
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+.main-title{
+    text-align: center;
+}
+.articles-container{
+    display: grid;
+    grid-template-columns: repeat( 3,
+    minmax( 150px , 1fr )
+    );
+    grid-template-areas: ". articles .";
+    grid-auto-rows: 50%;
+    justify-content: center;
+    align-items: start;
+}
+.articles{
+    grid-area: articles;
+}
+.tags{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}

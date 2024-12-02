@@ -1,0 +1,21 @@
+.main-title{
+    text-align: center;
+}
+main{
+    padding: 0rem 3rem;
+}
+.form-container{
+    width: 12rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 0 0 10px 0;
+}
+label{
+    margin: 10px 0 0 0;
+}
+textarea{
+    resize: vertical;
+}
