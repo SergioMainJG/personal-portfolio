@@ -100,7 +100,7 @@ hr{
 }
 .experience {
   padding: 0rem 1rem 1.5rem 1rem;
-  color: var(--oxford-blue);
+  color: var(--pacific-cyan);
 }
 @media (width < 430px ){
   .experience{
@@ -139,6 +139,7 @@ footer {
   padding: 0;
   display: flex;
   flex-direction: column;
+  border: var(--federal-blue-two) solid 2px;
 }
 .reviews-container {
   width: 100%;
@@ -175,7 +176,7 @@ footer {
   }
 }
 @media ( prefers-color-scheme: dark ) {
-  .reviews-container{
+  footer{
     border: 2px solid var(--federal-blue-two);
   }
   .review{
