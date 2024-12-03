@@ -1,68 +1,96 @@
-.main-content{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    border: 2px black solid;
+:root {
+  /*
+      *?Light
+      */
+  --federal-blue: hsla(239, 94%, 19%, 1);
+  --honolulu-blue: hsla(201, 100%, 36%, 1);
+  --pacific-cyan: hsla(190, 100%, 42%, 1);
+  --non-photo-blue: hsla(189, 75%, 75%, 1);
+  --light-cyan: hsla(190, 77%, 88%, 1);
+  --text-color: black;
+  /*
+      *?Dark
+      */
+  --black: hsla(247, 82%, 2%, 1);
+  --oxford-blue: hsla(239, 84%, 10%, 1);
+  --federal-blue-two: hsla(254, 98%, 16%, 1);
+  --navy-blue: hsla(256, 100%, 24%, 1);
 }
-.section-title{
-    text-align: center;
+.main-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 2px solid;
 }
-.projects{
-    border: 2px black solid;
-    display: inline;
-    width: 25%;
-    justify-content: center;
+@media (width <430px) {
+    .main-content{
+        /* flex-wrap: wrap; */
+        display: flex;
+        flex-direction: column;
+        flex-flow: row;
+    }
 }
-.project{
-    padding: 0rem 0rem 0rem 0.5rem;
-    font-size: 0.8rem;
+.section-title {
+  text-align: center;
 }
-.experiences{
-    width: 35%;
-    border: 2px black solid;
+.projects {
+  border: 2px black solid;
+  display: inline;
+  width: 25%;
+  justify-content: center;
 }
-.experience{
-    padding: 0rem 1rem 1.5rem 1rem;
+.project {
+  padding: 0rem 0rem 0rem 0.5rem;
+  font-size: 0.8rem;
 }
-.experiencie-title{
-    font-size: 1rem;
+.experiences {
+  width: 35%;
+  border: 2px black solid;
 }
-.education{
-    width: 40%;
-    border: 2px black solid;
-    padding: 1rem;
+.experience {
+  padding: 0rem 1rem 1.5rem 1rem;
 }
-.education-list{
-    list-style: none;
+.experiencie-title {
+  font-size: 1rem;
 }
-footer{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+.education {
+  width: 40%;
+  border: 2px black solid;
+  padding: 1rem;
 }
-.reviews-container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
+.education-list {
+  list-style: none;
 }
-.review{
-    border: 1px solid #000000c0;
-    border-radius: 15px;
-    width: 20%;
-    height: 30%;
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-.comment, .author, .authors-job{
-    font-size: 0.8rem;
-    margin: 1rem;
-    color: black;
+.reviews-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
 }
-.copyright{
-    text-align: center;
+.review {
+  border: 1px solid #000000c0;
+  border-radius: 15px;
+  width: 20%;
+  height: 30%;
+}
+.comment,
+.author,
+.authors-job {
+  font-size: 0.8rem;
+  margin: 1rem;
+  color: black;
+}
+.copyright {
+  text-align: center;
 }
