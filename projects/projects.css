@@ -1,17 +1,53 @@
-.main-title{
+:root {
+  /*
+      *?Light
+      */
+  --federal-blue: hsla(239, 94%, 19%, 1);
+  --honolulu-blue: hsla(201, 100%, 36%, 1);
+  --pacific-cyan: hsla(190, 100%, 42%, 1);
+  --non-photo-blue: hsla(189, 75%, 75%, 1);
+  --light-cyan: hsla(190, 77%, 88%, 1);
+  --text-color: black;
+  /*
+      *?Dark
+      */
+  --black: hsla(247, 82%, 2%, 1);
+  --oxford-blue: hsla(239, 84%, 10%, 1);
+  --federal-blue-two: hsla(254, 98%, 16%, 1);
+  --navy-blue: hsla(256, 100%, 24%, 1);
+}
+.main-title {
+  text-align: center;
+}
+.projects-container {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.project {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+.project-title {
+  text-align: center;
+}
+@media (width < 430px) {
+  .main-title {
     text-align: center;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
 }
-.projects-container{
-    padding: 1rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-.project{
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-}
-.project-title{
-    text-align: center;
+@media (prefers-color-scheme: dark) {
+  .project {
+    border: 2px solid var(--honolulu-blue);
+    color: var(--non-photo-blue);
+  }
 }

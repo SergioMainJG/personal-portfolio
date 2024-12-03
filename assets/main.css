@@ -25,21 +25,55 @@
   border: 2px solid;
 }
 @media (width <430px) {
-    .main-content{
-        /* flex-wrap: wrap; */
-        display: flex;
-        flex-direction: column;
-        flex-flow: row;
-    }
+  .main-content {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 .section-title {
   text-align: center;
+}
+@media ( prefers-color-scheme: dark ) {
+  .section-title{
+    color: var(--light-cyan);
+  }
 }
 .projects {
   border: 2px black solid;
   display: inline;
   width: 25%;
   justify-content: center;
+}
+hr{
+  border: none;
+  height: 2px;
+  background-color: var(--honolulu-blue);
+}
+@media ( width < 430px ){
+  .projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  hr{
+    width: 100%;
+  }
+}
+@media (prefers-color-scheme: dark){
+  .projects{
+    border: 2px solid var(--federal-blue-two);
+  }
+  hr{
+    border: none;
+    height: 2px;
+    background: var(--federal-blue-two);
+  }
 }
 .project {
   padding: 0rem 0rem 0rem 0.5rem;
@@ -49,8 +83,31 @@
   width: 35%;
   border: 2px black solid;
 }
+@media ( width < 430px ){
+  .experiences{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+  }
+}
+@media ( prefers-color-scheme: dark){
+  .experiences{
+    border: var(--federal-blue-two) 2px solid;
+  }
+}
 .experience {
   padding: 0rem 1rem 1.5rem 1rem;
+  color: var(--oxford-blue);
+}
+@media (width < 430px ){
+  .experience{
+    width: 100%;
+    color: var(--pacific-cyan);
+    text-align: left;
+  }
 }
 .experiencie-title {
   font-size: 1rem;
@@ -59,6 +116,19 @@
   width: 40%;
   border: 2px black solid;
   padding: 1rem;
+}
+@media (width < 430px ){
+  .education{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media ( prefers-color-scheme: dark ){
+  .education{
+    color: var(--pacific-cyan);
+    border: 2px solid var(--federal-blue-two);
+  }
 }
 .education-list {
   list-style: none;
@@ -78,6 +148,7 @@ footer {
   justify-content: center;
   gap: 3rem;
 }
+
 .review {
   border: 1px solid #000000c0;
   border-radius: 15px;
@@ -91,6 +162,37 @@ footer {
   margin: 1rem;
   color: black;
 }
+@media ( width < 430px ) {
+  .reviews-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review{
+    /* border: 1px solid var(--non-photo-blue); */
+    width: 80%;
+  }
+}
+@media ( prefers-color-scheme: dark ) {
+  .reviews-container{
+    border: 2px solid var(--federal-blue-two);
+  }
+  .review{
+    border: 2px solid var(--federal-blue);
+  }
+  .comment{
+    color: var(--pacific-cyan);
+  }
+  .author, .authors-job{
+    color: var(--non-photo-blue);
+  }
+}
 .copyright {
   text-align: center;
 }
+@media ( prefers-color-scheme: dark ){
+  .copyright{
+    color: var(--honolulu-blue);
+  }
+} 
